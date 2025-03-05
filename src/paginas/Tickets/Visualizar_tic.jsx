@@ -17,7 +17,7 @@ const Visualizar_tic = () => {
                     throw new Error("No se encontró el token de autenticación.");
                 }
 
-                const url = `https://examen-fin-carrera-backend.onrender.com/api/ticket/${id}`;
+                const url = ` https://examen-fin-carrera-backend.onrender.com/api/ticket/${id}`;
                 const options = {
                     headers: {
                         'Content-Type': 'application/json',
