@@ -13,7 +13,7 @@ const Tabla_tec = () => {
     const listartecnicos = async () => {
         try {
             const token = localStorage.getItem('token');
-            const url = `http://localhost:3000/api/tecnico/tecnicos`;
+            const url = `https://examen-fin-carrera-backend.onrender.com/api/tecnico/tecnicos`;
             const options = {
                 headers: {
                     'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const Tabla_tec = () => {
             const confirmar = window.confirm("¿Estás seguro de eliminar este registro?");
             if (confirmar) {
                 const token = localStorage.getItem('token');
-                const url = `http://localhost:3000/api/tecnico/eliminar/${id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/api/tecnico/eliminar/${id}`;
                 const headers = {
                     'Content-Type': 'application/json',
                     Authorization: `Bearer ${token}`

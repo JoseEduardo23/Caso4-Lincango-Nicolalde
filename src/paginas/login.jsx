@@ -27,7 +27,7 @@ const Login = () => {
         e.preventDefault();
         console.log("Handle submit se esta ejecutando")
         try {
-            const url = `http://localhost:3000/api/login`;
+            const url = `https://examen-fin-carrera-backend.onrender.com/api/login`;
             const respuesta = await axios.post(url, form);
             localStorage.setItem("token", respuesta.data.token);
             console.log(respuesta.data);

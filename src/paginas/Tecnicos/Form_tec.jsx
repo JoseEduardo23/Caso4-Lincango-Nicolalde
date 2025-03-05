@@ -68,12 +68,12 @@ export const Form_tec = ({tecnico}) => {
 
 
             if (tecnico?._id) {
-                const url = `http://localhost:3000/api/tecnico/actualizar/${tecnico._id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/api/tecnico/actualizar/${tecnico._id}`;
                 await axios.put(url, formData, { headers });
                 toast.success("Actualización de tecnico completada");
                 navigate('/dashboard/tecnicos/listar_tec')
             } else {
-                const url = "http://localhost:3000/api/tecnico/crear";
+                const url = "https://examen-fin-carrera-backend.onrender.com/api/tecnico/crear";
                 await axios.post(url, formData, { headers });
                 toast.success("Registro de tecnico completado");
                 navigate('/dashboard/tecnicos/listar_tec');

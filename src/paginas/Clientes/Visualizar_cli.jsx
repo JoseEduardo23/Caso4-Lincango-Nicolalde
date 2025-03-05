@@ -18,7 +18,7 @@ const Visualizar_cli = ()=>{
                     throw new Error("No se encontró el token de autenticación.");
                 }
                 
-                const url = `http://localhost:3000/api/cliente/${id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/api/cliente/${id}`;
                 const options = {
                     headers: {
                         'Content-Type': 'application/json',

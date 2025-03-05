@@ -66,12 +66,12 @@ const Form_cli = ({cliente}) => {
 
 
             if (cliente?._id) {
-                const url = `http://localhost:3000/api/cliente/actualizar/${cliente._id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/api/cliente/actualizar/${cliente._id}`;
                 await axios.put(url, formData, { headers });
                 toast.success("Actualización de cliente completada");
                 navigate('/dashboard/clientes/listar_cli')
             } else {
-                const url = "http://localhost:3000/api/cliente/crear";
+                const url = "https://examen-fin-carrera-backend.onrender.com/api/cliente/crear";
                 await axios.post(url, formData, { headers });
                 toast.success("Registro de cliente completado");
                 navigate('/dashboard/clientes/listar_cli');

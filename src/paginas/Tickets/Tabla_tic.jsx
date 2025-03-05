@@ -14,7 +14,7 @@ const Tabla_tic = ()=>{
     const listarTickets = async () => {
         try {
             const token = localStorage.getItem('token');
-            const url = `http://localhost:3000/api/ticket/tickets`;
+            const url = `https://examen-fin-carrera-backend.onrender.com/api/ticket/tickets`;
             const options = {
                 headers: {
                     'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const Tabla_tic = ()=>{
             const confirmar = window.confirm("¿Estás seguro de eliminar este registro?");
             if (confirmar) {
                 const token = localStorage.getItem('token');
-                const url = `http://localhost:3000/api/ticket/eliminar/${id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/ticket/eliminar/${id}`;
                 const headers = {
                     'Content-Type': 'application/json',
                     Authorization: `Bearer ${token}`

@@ -20,7 +20,7 @@ const Actualizar_tic = () => {
                 }
 
                 const headers = { Authorization: `Bearer ${token}` };
-                const url = `http://localhost:3000/api/ticket/${id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/api/ticket/${id}`;
 
                 const respuesta = await axios.get(url, { headers });
 

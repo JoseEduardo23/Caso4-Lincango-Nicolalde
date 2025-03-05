@@ -19,7 +19,7 @@ const Actualizar_cli = ()=>{
                     }
     
                     const headers = { Authorization: `Bearer ${token}` };
-                    const url = `http://localhost:3000/api/cliente/${id}`;
+                    const url = `https://examen-fin-carrera-backend.onrender.com/api/cliente/${id}`;
     
                     const respuesta = await axios.get(url, { headers });
     

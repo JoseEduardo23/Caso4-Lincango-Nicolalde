@@ -14,7 +14,7 @@ const Tabla_cli = ()=>{
     const listarclientes = async () => {
         try {
             const token = localStorage.getItem('token');
-            const url = `http://localhost:3000/api/cliente/clientes`;
+            const url = `https://examen-fin-carrera-backend.onrender.com/api/cliente/clientes`;
             const options = {
                 headers: {
                     'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const Tabla_cli = ()=>{
             const confirmar = window.confirm("¿Estás seguro de eliminar este registro?");
             if (confirmar) {
                 const token = localStorage.getItem('token');
-                const url = `http://localhost:3000/api/cliente/eliminar/${id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/cliente/eliminar/${id}`;
                 const headers = {
                     'Content-Type': 'application/json',
                     Authorization: `Bearer ${token}`

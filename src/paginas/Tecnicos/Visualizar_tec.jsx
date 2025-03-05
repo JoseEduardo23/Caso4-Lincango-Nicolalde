@@ -18,7 +18,7 @@ const Visualizar_tec = () =>{
                     throw new Error("No se encontró el token de autenticación.");
                 }
                 
-                const url = `http://localhost:3000/api/tecnico/${id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/api/tecnico/${id}`;
                 const options = {
                     headers: {
                         'Content-Type': 'application/json',

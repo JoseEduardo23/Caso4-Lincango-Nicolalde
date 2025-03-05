@@ -21,7 +21,7 @@ const Form_tic = () => {
             const cargarTicket = async () => {
                 try {
                     const token = localStorage.getItem("token");
-                    const url = `http://localhost:3000/api/ticket/${id}`;
+                    const url = `https://examen-fin-carrera-backend.onrender.com/api/ticket/${id}`;
                     const options = {
                         headers: {
                             "Content-Type": "application/json",
@@ -63,7 +63,7 @@ const Form_tic = () => {
 
         try {
             const token = localStorage.getItem("token");
-            const url = "http://localhost:3000/api/cliente/clientes";
+            const url = "https://examen-fin-carrera-backend.onrender.com/api/cliente/clientes";
             const options = {
                 headers: {
                     "Content-Type": "application/json",
@@ -106,7 +106,7 @@ const Form_tic = () => {
 
         try {
             const token = localStorage.getItem("token");
-            const url = "http://localhost:3000/api/tecnico/tecnicos";
+            const url = "https://examen-fin-carrera-backend.onrender.com/api/tecnico/tecnicos";
             const options = {
                 headers: {
                     "Content-Type": "application/json",
@@ -175,10 +175,10 @@ const Form_tic = () => {
             let url;
             let metodo;
             if (ticket?._id) {
-                url = `http://localhost:3000/api/ticket/actualizar/${ticket._id}`;
+                url = `https://examen-fin-carrera-backend.onrender.com/api/ticket/actualizar/${ticket._id}`;
                 metodo = axios.put;
             } else {
-                url = "http://localhost:3000/api/ticket/crear";
+                url = "https://examen-fin-carrera-backend.onrender.com/api/ticket/crear";
                 metodo = axios.post;
                 
             }
