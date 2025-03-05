@@ -14,13 +14,13 @@ const Perfil = () => {
                 <p>{auth.rol}</p>
             </header>
             <div className="self-start">
-                <b>Nombre:</b><p className="inline-block ml-3">{auth.nombre}</p>
+                <b>Nombre:</b><p className="inline-block ml-3">{auth?.nombre}</p>
             </div>
             <div className="self-start">
-                <b>Email:</b><p className="inline-block ml-3">{auth.email}</p>
+                <b>Email:</b><p className="inline-block ml-3">{auth?.email}</p>
             </div >
             <div className="self-start">
-                <b>Cedula:</b><p className="inline-block ml-3">{auth.cedula}</p>
+                <b>Cedula:</b><p className="inline-block ml-3">{auth?.cedula}</p>
             </div>
             <Outlet />
         </div>
