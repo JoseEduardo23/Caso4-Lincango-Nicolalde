@@ -1,0 +1,24 @@
+.tab-container{
+    width: 80%;
+    padding: 0 3rem;
+    justify-self: center;
+}
+
+.tab-container thead{
+    background-color: darkblue;
+    color: white;
+}
+
+.tab-cuerpo{
+    background-color: wheat;
+}
+
+.tab-cuerpo tr{
+    border: 2px solid black;
+}
+
+.cuerpo{
+    border-top: 2px solid black;
+    height: 25px;
+    text-align: center;
+}

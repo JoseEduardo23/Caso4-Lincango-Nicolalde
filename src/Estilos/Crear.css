@@ -1,0 +1,58 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-est{
+    justify-self: center;
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: linear-gradient(to top, rgb(12, 43, 111) 0%, rgb(20, 20, 142) 50%, rgb(18, 18, 57) 100%);
+}
+
+.form-est{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 3.5rem 4rem;
+}
+
+.form-est label{
+    margin-top: 10px;
+    color: white;
+}
+
+.form-est input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray ;
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 8px;
+    color: white;
+}
+
+form .btn-est{
+    margin-top: 40px;
+    height: 30px;
+    width: 50%;
+    margin-left: 120px;
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: 0.5s ease;
+}
+form .btn-est:hover{
+    background-color: rgb(18, 18, 95);
+    color: white;
+    transition: all 0.5s ease;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.title-est p{
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+}

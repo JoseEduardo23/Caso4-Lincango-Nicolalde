@@ -1,0 +1,18 @@
+.div-container{
+    justify-self: center;
+    padding: 2rem 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.visualizar-container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 4rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px 5px;
+    background-color: wheat;
+}
+
+
+

@@ -1,0 +1,89 @@
+/* Estilos generales para el componente Estudiantes */
+.estudiantes-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.estudiantes-container p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.estudiantes-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.estudiantes-container li {
+    margin-bottom: 10px;
+}
+
+.estudiantes-container a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: #3b82f6;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.estudiantes-container a:hover {
+    background-color: #1e40af;
+    color: white;
+}
+
+.estudiantes-container .active {
+    background-color: #1e40af;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    .estudiantes-container {
+        padding: 15px;
+    }
+
+    .estudiantes-container p {
+        font-size: 1.2rem;
+    }
+
+    .estudiantes-container a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .estudiantes-container {
+        padding: 10px;
+    }
+
+    .estudiantes-container p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .estudiantes-container a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .estudiantes-container {
+        padding: 8px;
+    }
+
+    .estudiantes-container p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .estudiantes-container a {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
+}

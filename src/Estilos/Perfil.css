@@ -1,0 +1,129 @@
+/* src/Estilos/Perfil.css */
+.perfil-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    background-color: wheat;
+}
+
+.perfil-header {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 20px;
+}
+
+.perfil-header h1 {
+    font-size: 2.8rem;
+    color: #333;
+    margin: 10px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.perfil-header p {
+    font-size: 1.2rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.self-start {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.self-start b {
+    width: 140px;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.self-start p {
+    color: #333;
+    font-size: 1.1rem;
+    margin-left: 15px;
+}
+
+.perfil-container .self-start p {
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: 400;
+}
+
+.self-start p span {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.self-start .inline-block {
+    display: inline-block;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Botón de acción */
+.btn-action {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-action:hover {
+    background-color: #0056b3;
+}
+
+.perfil-container p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.perfil-container .self-start p {
+    margin-left: 15px;
+}
+
+/* Estilos para un diseño responsivo */
+@media screen and (max-width: 768px) {
+    .perfil-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .perfil-header h1 {
+        font-size: 2rem;
+    }
+
+    .perfil-header p {
+        font-size: 1rem;
+    }
+
+    .self-start {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+
+    .self-start b {
+        margin-bottom: 5px;
+    }
+
+    .self-start p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+}

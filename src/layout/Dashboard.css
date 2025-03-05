@@ -1,0 +1,170 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../assets/fondo1.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    width: 100vw;
+    height: 150vh;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.nabv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 100vh;
+    background-color: #3b82f6; /* Fondo más atractivo */
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.nabv li {
+    list-style: none;
+    width: 100%;
+}
+
+.nabv a {
+    display: block;
+    width: 150px;
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: left;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.nabv a:hover, .nabv a.active {
+    background-color: #1e40af;
+    width: 150px;
+    color: white;
+}
+
+.nabv a i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+
+.content-area {
+    flex-grow: 1;
+    margin-left: 250px; /* Para que no se sobreponga con la barra lateral */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: margin-left 0.3s ease; /* Animación suave para el contenido */
+}
+
+@media (max-width: 1024px) {
+    /* Pantallas de tamaño mediano (como tablets) */
+    .dashboard-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nabv {
+        width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: none;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .content-area {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .nabv a {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Dispositivos móviles */
+    .dashboard-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nabv {
+        position: fixed;
+        top: 0;
+        left: -250px; /* Oculta la barra lateral inicialmente */
+        width: 250px;
+        height: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .content-area {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .nabv.active {
+        left: 0; /* Muestra la barra lateral cuando tiene la clase active */
+    }
+
+    .nabv a {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .content-area {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Pantallas muy pequeñas */
+    .nabv a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .content-area {
+        padding: 8px;
+    }
+}
+
+/* Para el botón de menú en dispositivos móviles */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #3b82f6;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .menu-toggle.active {
+        background-color: #1e40af;
+    }
+}
