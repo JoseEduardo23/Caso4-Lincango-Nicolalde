@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import AuthContext from '../Context/AuthProvider';
 import '../Estilos/Login.css'
 
-import img1 from '../assets/fondo1.jpg'
+import img1 from '../assets/Fondo1.jpg'
 
 const Login = () => {
     const navigate = useNavigate();
