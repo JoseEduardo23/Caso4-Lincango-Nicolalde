@@ -34,7 +34,7 @@ const Tabla_cli = ()=>{
             const confirmar = window.confirm("¿Estás seguro de eliminar este registro?");
             if (confirmar) {
                 const token = localStorage.getItem('token');
-                const url = `https://examen-fin-carrera-backend.onrender.com/cliente/eliminar/${id}`;
+                const url = `https://examen-fin-carrera-backend.onrender.com/api/cliente/eliminar/${id}`;
                 const headers = {
                     'Content-Type': 'application/json',
                     Authorization: `Bearer ${token}`

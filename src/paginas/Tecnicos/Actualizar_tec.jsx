@@ -20,7 +20,7 @@ const Actualizar_tec =()=>{
                 }
 
                 const headers = { Authorization: `Bearer ${token}` };
-                const url = `https://examen-fin-carrera-backend.onrender.com/api/tecnico/${id}`;
+                const url =  `https://examen-fin-carrera-backend.onrender.com/api/tecnico/${id}`;
 
                 const respuesta = await axios.get(url, { headers });
 
