@@ -14,7 +14,7 @@ const Dashboard = () => {
       
       <ul className="nabv">
         <p className="text-slate-400 text-center my-4 text-sm">
-          <span className="bg-green-600 w-3 h-3 inline-block rounded-full"></span> Bienvenido - {auth.nombre}
+          <span className="bg-green-600 w-3 h-3 inline-block rounded-full"></span> Bienvenido - {auth?.nombre}
         </p>
         <li className="text-center">
           <Link to='/dashboard/perfil' className={`${urlActual === '/dashboard/perfil' ? 'active' : ''}`}>Perfil</Link>
